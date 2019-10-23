@@ -38,27 +38,6 @@ BUILD
 
   - Run: 
     * Terminal$ docker run java-app
-
-  - Deploy and Run Docker Image:
-    * Terminal$ docker run -p 8080:9080 -t java-app
-
-  - Run and :
-    * Terminal$ docker run -d -p 8080:9080 -t java-app
-
-  - Shows us what is running:
-    * Terminal$ docker ps
-
-  - Stop:
-    * Terminal$ docker stop java-app
-
-  - Still there:
-    * Terminal$ docker ps -a
-
-  - Restart:
-    * Terminal$ docker restart java-app
-
-  - Docker logs:
-    * Terminal$ docker exec -it java-app sh
 ```
 
 EXAMPLE
