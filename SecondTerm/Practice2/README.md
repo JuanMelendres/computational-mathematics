@@ -31,3 +31,39 @@ RUN
 ```
 java CYK <GrammarFile> <String to check>
 ```
+
+EXAMPLE
+-------
+
+```
+      Terminal$ javac AlgorithmCYK.java
+      Terminal$ java AlgorithmCYK grammar.txt bbab
+
+      Word: bbab
+
+      G = ({a, b}, {S, A, B, C}, P, S)
+
+      With Productions P as:
+      A -> BA | a
+      B -> CC | b
+      C -> AB | a
+      S -> AB | BC
+
+      Applying CYK-Algorithm:
+
+      +-------+-------+-------+-------+
+      | b     | b     | a     | b     |
+      +-------+-------+-------+-------+
+      | B     | B     | A,C   | B     |
+      +-------+-------+-------+-------+
+      | -     | A,S   | C,S   |
+      +-------+-------+-------+
+      | A     | C,S   |
+      +-------+-------+
+      | C,S   |
+      +-------+
+
+      The word "bbab" is an element of the CFG G and can be derived from it.
+      Derivation Tree: 
+      b b a b B B A C B  A S C S A C S C S
+```
