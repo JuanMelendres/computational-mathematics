@@ -23,7 +23,7 @@ DOCKER FILE
 
 You have to change this part on the Docker File:
   
-  You have to write the GrammarFile and the string to be checked
+  You have to write the Grammar File and the string to be checked
 
 ```
   CMD ["java", "AlgorithmCYK", "grammar.txt", "bbab"]
